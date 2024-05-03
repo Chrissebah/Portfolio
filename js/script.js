@@ -2,10 +2,10 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onClick = () => {
+menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('active');
-};
+});
 
 
 /*=================== scroll sections active link =====================*/
@@ -68,6 +68,6 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
     ],
     loop: true,
     typeSpeed: 80,
-    backSpeed: 80,
+    backSpeed: 50,
     backDelay: 2000,
   });
